@@ -32,7 +32,7 @@ module.exports = {
         path: __dirname + '/dist/',
         filename: "js/bundle.js?v=[chunkhash:8]",
         chunkFilename: 'js/[name].bundle.js?v=[chunkhash:8]',
-        publicPath: '/',
+        publicPath: '/tc-admin/dist',
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
