@@ -1,0 +1,63 @@
+
+.ca-tasklistcard .projectList :global .ant-card-meta-description {
+    color: rgba(0, 0, 0, 0.45);
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.ca-tasklistcard .projectList .cardTitle {
+    font-size: 0;
+}
+
+.ca-tasklistcard .projectList .cardTitle a {
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 12px;
+    line-height: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.ca-tasklistcard .projectList .cardTitle a:hover {
+    color: #1890ff;
+}
+
+.ca-tasklistcard .projectList .projectGrid {
+    width: 33.33%;
+    cursor: pointer;
+}
+
+.ca-tasklistcard .projectList .projectItemContent {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.ca-tasklistcard .projectList .projectItemContent a {
+    color: rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    flex: 1 1 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.ca-tasklistcard .projectList .projectItemContent a:hover {
+    color: #1890ff;
+}
+
+.ca-tasklistcard .projectList .projectItemContent .datetime {
+    color: rgba(0, 0, 0, 0.25);
+    flex: 0 0 auto;
+    float: right;
+}

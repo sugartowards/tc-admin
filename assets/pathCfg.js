@@ -1,0 +1,1 @@
+window.ServicePath = 'http://localhost:8080/Service/';

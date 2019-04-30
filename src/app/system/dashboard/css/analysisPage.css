@@ -1,0 +1,28 @@
+
+.ca-analysispage {
+    margin: 20px;
+}
+
+.ca-analysispage > .top {
+    margin-bottom: 24px;
+}
+
+.ca-analysispage > .middle {
+    margin-bottom: 24px;
+}
+
+.ca-analysispage > .middle .ant-card-head, .ca-analysispage > .middle .ant-card-bordered {
+    border-width: 0px;
+}
+
+.ca-analysispage > .middle .ant-card-body {
+    padding: 0 0 32px 32px;
+}
+
+.ca-analysispage > .bottom .ant-card-head, .ca-analysispage > .bottom .ant-card-bordered {
+    border-width: 0px;
+}
+
+.ca-analysispage > .bottom .ant-card-body {
+    padding: 0 0 32px 32px;
+}

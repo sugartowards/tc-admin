@@ -1,0 +1,47 @@
+
+/*布局*/
+.ca-rolepermission > div{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+/*头部图标和名称*/
+.ca-rolepermission .icon{
+    font-size: 48px;
+    color: #4da3ff;
+    text-align: center;
+    vertical-align: middle;
+}
+.ca-rolepermission .name{
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ca-rolepermission .name > div{
+    height: 100%;
+}
+
+/*权限角色*/
+.ca-rolepermission .roles{
+    min-height: calc(100vh - 400px);
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+    padding-right: 20px;
+    border-right: 1px solid #f0f2f5;
+}
+.ca-rolepermission .roles .ant-list-item{
+    cursor: pointer;
+}
+.ca-rolepermission .roles .roleactive{
+    color: #1890FF;
+    background-color: #f0f2f5;
+}
+
+/*权限树*/
+.ca-rolepermission .tree{
+    min-height: calc(100vh - 400px);
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+    margin-bottom: 20px;
+}

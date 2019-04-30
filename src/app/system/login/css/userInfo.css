@@ -1,0 +1,41 @@
+
+.ca-userinfo {
+    margin: 15px !important;
+    padding: 15px;
+}
+
+.ca-userinfo .userinfo-left, .ca-userinfo .userinfo-right {
+    background-color: white;
+    min-height: 700px;
+    border-radius: 5px;
+}
+
+.ca-userinfo .userinfo-left {
+    padding-top: 30px;
+}
+
+.ca-userinfo .userinfo-left img {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    border-radius: 100px;
+}
+
+.ca-userinfo .userinfo-left .ant-card-meta {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ca-userinfo .userinfo-right {
+    padding: 0 15px 0 15px;
+}
+
+.ca-uploadavatar .ant-upload-select-picture-card {
+    width: 300px;
+    height: 300px;
+}
+
+.ca-uploadavatar .ant-upload-select-picture-card img {
+    max-width: 300px;
+    max-height: 300px;
+}

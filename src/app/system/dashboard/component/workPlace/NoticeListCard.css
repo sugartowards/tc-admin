@@ -1,0 +1,13 @@
+
+.ca-noticelistcard .ant-card-body {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ca-noticelistcard .activitiesList {
+    padding: 0 24px 8px 24px;
+}
+
+.ca-noticelistcard .activitiesList .datetime {
+    color: rgba(0, 0, 0, 0.25);
+}

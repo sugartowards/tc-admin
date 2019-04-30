@@ -1,0 +1,14 @@
+/*重写穿梭框大小*/
+.ca-linkroles .ant-transfer-list:first-child {
+    width: 48%;
+    height: calc(70vh - 150px);
+}
+
+.ca-linkroles .ant-transfer-operation {
+    width: 4%;
+}
+
+.ca-linkroles .ant-transfer-list:last-child {
+    width: 46%;
+    height: calc(70vh - 150px);
+}

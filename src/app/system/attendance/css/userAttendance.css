@@ -1,0 +1,59 @@
+.ca-userattendance {
+    margin: 20px;
+    background-color: white;
+}
+
+/*表格*/
+.ca-userattendance .ant-fullcalendar-header .ant-radio-group-default {
+    display: none;
+}
+
+.ca-userattendance .ant-fullcalendar-column-header {
+    background-color: #5b8be2;
+    color: #edf3fc;
+    padding-top: 5px;
+}
+
+.ca-userattendance .weekend {
+    border-left: 3px solid #F1A17B;
+    padding-left: 10px;
+    color: #F1A17B;
+}
+
+/*右侧*/
+.ca-userattendance .panel {
+    margin-left: 20px;
+    height: 100%;
+}
+
+.ca-userattendance .panel .ant-card-head {
+    padding: 0;
+}
+
+.ca-userattendance .panel > .ant-card-body {
+    padding: 0;
+}
+
+.ca-userattendance .panel .ant-card-head-title {
+    background-color: #5B8BE2;
+    color: #EDF3FC;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-left: 20px;
+}
+
+.ca-userattendance .curtime {
+    font-size: 40px;
+    color: #5B8BE2;
+}
+
+.ca-userattendance .text {
+    font-size: 15px;
+    font-family: "微软雅黑";
+    line-height: 30px;
+    color: #878787;
+}
+
+.ca-userattendance .text font {
+    line-height: 40px;
+}
