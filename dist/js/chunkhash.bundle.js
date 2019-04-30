@@ -136,7 +136,7 @@ n.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},/******/
 /******/
 // __webpack_public_path__
 /******/
-n.p="/tc-admin/dist",/******/
+n.p="/tc-admin/dist/",/******/
 /******/
 // on error function for async loading
 /******/
