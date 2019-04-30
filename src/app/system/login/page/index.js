@@ -18,10 +18,6 @@ export default class Index extends TopMenuIndexPage {
         this.appMap = props.appMap;
     }
 
-    componentDidMount() {
-        this.setState({menuData: this.handleLoginData(null)});
-    }
-
     /**
      * 递归处理菜单
      * 1.将隐藏的菜单去掉
