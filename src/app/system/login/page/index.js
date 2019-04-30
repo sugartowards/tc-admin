@@ -6,10 +6,10 @@ import "../css/index.css";
 export default class Index extends TopMenuIndexPage {
 
     constructor(props, context) {
-        localStorage.setItem(TopMenuIndexPage._UserInfo, {
+        localStorage.setItem(TopMenuIndexPage._UserInfo, JSON.stringify({
             username: 'Admin',
             password: '123456',
-        });
+        }));
         super(props, context);
         this.userInfo && (this.app = `${context.urlPath.pmsn.userPmsn}/${this.userInfo.id}`);
         this.loginApp = context.urlPath.pmsn.login;
