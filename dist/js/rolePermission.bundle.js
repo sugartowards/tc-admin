@@ -1,0 +1,33 @@
+webpackJsonp([13],{/***/
+215:/***/
+function(e,t,n){"use strict";function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function i(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var l=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},a=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),s=n(0),c=function(e){return e&&e.__esModule?e:{default:e}}(s),u=n(1),f=n(22),p=n(288);n(289);/**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Suger on 2018/5/4.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+var m=function(e){function t(e){r(this,t);var n=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.func=n.bindFunc(p.RolePermissionFunc),n.state={roles:[],selectRole:e.role,menus:null,selectMenus:null},n}return i(t,e),a(t,[{key:"componentWillMount",value:function(){this.treeOptions={ref:p.TreeObj,params:"",checkable:!0,dataKey:{key:"id",title:"title"},selectToCheck:!0};var e=[{text:"保存",type:"primary",click:"saveMenuPermission"}];this.buttonListOptions={list:e},this.bindFuncObj(e,this.buttonListOptions)}},{key:"render",value:function(){var e=this,t=this.state,n=t.roles,r=t.selectRole,o=t.menus,i=t.selectMenus;return c.default.createElement("div",{className:"ca-rolepermission"},c.default.createElement(u.Row,{type:"flex",align:"center"},c.default.createElement(u.Col,{span:1,className:"icon"},c.default.createElement(u.Icon,{type:"user-add"})),c.default.createElement(u.Col,{span:6,className:"name"},c.default.createElement(u.Row,{type:"flex",align:"middle"},r.name))),c.default.createElement(u.Row,null,c.default.createElement(u.Col,{span:4,className:"roles"},c.default.createElement(u.List,{bordered:!0,dataSource:n,renderItem:function(t){var n=t.id,o=t.name;return c.default.createElement(u.List.Item,{key:n,id:n,className:n==r.id?"roleactive":null,onClick:e.func.onSelectRole},o)}})),c.default.createElement(u.Col,{span:20},c.default.createElement(u.Row,{type:"flex",justify:"start"},c.default.createElement(u.Col,{span:24,className:"tree"},o&&i?c.default.createElement(f.Tree,l({},this.treeOptions,{data:o,checkedKeys:i})):null),c.default.createElement(u.Col,{span:1,style:{marginLeft:10}},c.default.createElement(f.ButtonList,this.buttonListOptions))))))}},{key:"componentDidMount",value:function(){var e=this,t=this.context.urlPath;this.func.queryRolePmsn(this.state.selectRole.id),f.Util.Fetch.post(t.pmsn.role+"/list",{},function(t){var n=t.rows;n.length&&e.setState({roles:n})}),f.Util.Fetch.get(t.pmsn.menuTree,{},function(t){t.length&&e.setState({menus:t})})}}]),t}(f.Page);t.default=m},/***/
+288:/***/
+function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.RolePermissionFunc=t.TreeObj=void 0;var r=n(22),o=t.TreeObj="treeObj";t.RolePermissionFunc={/**
+     * 保存权限
+     */
+saveMenuPermission:function(){var e=this.refs[o].getChecked(),t=this.state.selectRole.id,n=e.map(function(e){return{role_id:t,menu_id:e.id}}),i=this.context.urlPath;r.Util.Fetch.post(i.pmsn.rolePmsn+"/"+t,n,function(){})},/**
+     * 选择一个角色时候触发
+     * @param currentTarget
+     */
+onSelectRole:function(e){var t=e.currentTarget,n=t.getAttribute("id"),r=this.state.roles.find(function(e){return n==e.id});this.func.queryRolePmsn(r.id),this.setState({selectRole:r,selectMenus:null})},/**
+     * 查询角色菜单权限
+     * @param roleId
+     */
+queryRolePmsn:function(e){var t=this,n=this.context.urlPath;r.Util.Fetch.get(n.pmsn.rolePmsn+"/"+e,{},function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];t.setState({selectMenus:e.map(function(e){return e.id})})})}}},/***/
+289:/***/
+function(e,t,n){
+// style-loader: Adds some css to the DOM by adding a <style> tag
+// load the styles
+var r=n(290);"string"==typeof r&&(r=[[e.i,r,""]]);
+// Prepare cssTransformation
+var o={hmr:!0};o.transform=void 0;
+// add the styles to the DOM
+n(4)(r,o);r.locals&&(e.exports=r.locals)},/***/
+290:/***/
+function(e,t,n){t=e.exports=n(3)(void 0),
+// imports
+// module
+t.push([e.i,"\r\n/*布局*/\r\n.ca-rolepermission > div{\r\n    margin: 20px;\r\n    padding: 20px;\r\n    background-color: white;\r\n}\r\n\r\n/*头部图标和名称*/\r\n.ca-rolepermission .icon{\r\n    font-size: 48px;\r\n    color: #4da3ff;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n}\r\n.ca-rolepermission .name{\r\n    font-size: 32px;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n}\r\n.ca-rolepermission .name > div{\r\n    height: 100%;\r\n}\r\n\r\n/*权限角色*/\r\n.ca-rolepermission .roles{\r\n    min-height: calc(100vh - 400px);\r\n    max-height: calc(100vh - 400px);\r\n    overflow-y: auto;\r\n    padding-right: 20px;\r\n    border-right: 1px solid #f0f2f5;\r\n}\r\n.ca-rolepermission .roles .ant-list-item{\r\n    cursor: pointer;\r\n}\r\n.ca-rolepermission .roles .roleactive{\r\n    color: #1890FF;\r\n    background-color: #f0f2f5;\r\n}\r\n\r\n/*权限树*/\r\n.ca-rolepermission .tree{\r\n    min-height: calc(100vh - 400px);\r\n    max-height: calc(100vh - 400px);\r\n    overflow-y: auto;\r\n    margin-bottom: 20px;\r\n}",""])}});
