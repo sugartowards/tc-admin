@@ -33,5 +33,5 @@
         sysTable.js                                   --	表字段等信息
         sysEntitys.js                                 --	表配置等信息
         menuCfg.js                                    --	菜单路由
-        appCfg.js                                     --	辅组app.js文件
-        app.js                                        --	代码入口
+        appCfg.js                                     --	辅助app.js文件
+    app.js                                            --	代码入口
