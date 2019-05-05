@@ -59,7 +59,7 @@ module.exports = {
         // 压缩
         new webpack.optimize.UglifyJsPlugin({
             output: {
-                comments: true, // remove all comments
+                comments: false, // remove all comments
             },
             mangle: true,
             compress: {
